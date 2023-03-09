@@ -50,8 +50,9 @@ Resources which allows to grasp XCM(P)('Cross Chain Message (Passing)').
 
 ## HRMP
 
-- [How to open XCMP HRPM channel](./how-to-open-xcmp-hrmp-channel.md)
-
+- [How to open Dotsama XCMP HRMP channel](./How%20to%20open%20Dotsama%20XCMP%20HRMP%20channel.md)
+- [StackExchange: Substrate and Polkadot: How to open HRMP channels between parachains?](https://substrate.stackexchange.com/questions/5445/how-to-open-hrmp-channels-between-parachains)
+- [Substrate How to Guides: Parachains: Add HRMP channels](https://docs.substrate.io/reference/how-to-guides/parachains/add-hrmp-channels/)
 
 ## Cross chain assets
 

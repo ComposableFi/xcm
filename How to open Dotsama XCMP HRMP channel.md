@@ -1,5 +1,5 @@
 ---
-title: How to open XCMP HRPM channel
+title: How to open Dotsama XCMP HRPM channel
 ---
 
 # Overview 
