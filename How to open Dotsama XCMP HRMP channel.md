@@ -101,11 +101,13 @@ Please do all relevant checks from the previous step.
 
 This should be executed
 
-https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.api.onfinality.io%2Fpublic-ws#/extrinsics/decode/0x3c01d0070000
+[Accept Open Channel on Kusama from 2001 example](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fkusama.api.onfinality.io%2Fpublic-ws#/extrinsics/decode/0x3c01d1070000)
 
-executed on behalf of 
+as message from our chain 
 
-https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpicasso-rpc.composable.finance#/extrinsics/decode/0x2900010100020c000400000000070010a5d4e81300000000070010a5d4e80006010700e8764817183c01d0070000
+[Send XCM to accept from Picasso to Kusama for chain 2001](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpicasso-rpc.composable.finance#/extrinsics/decode/0x2900010100020c000400000000070010a5d4e81300000000070010a5d4e80006010700e8764817183c01d0070000)
+
+it must be send from [sudo](ttps://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpicasso-rpc.composable.finance#/extrinsics/decode/0x020029000101000210000400000000070010a5d4e81300000000070010a5d4e80006010700e8764817183c01d10700000d0100040001009d20)
 
 
 **Details**
