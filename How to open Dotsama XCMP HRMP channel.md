@@ -55,20 +55,23 @@ It will execute a request to open a channel (half of future duplex).
 
 **Details**
 
-A message will be sent to the relay and pay all fees in the relay native tokens.
+A message will be sent to the relay and pay all fees in the relay native(example, KSM) tokens.
 
 Ensure the transaction is executed from `Native` (Parachain itself) `originType`
  
-Ensure the function `DepositAsset` will deposit to the relevant Parachain identifier (spending chain)
+Ensure the function `DepositAsset` will deposit to the relevant Parachain identifier (spending chain). 
+Specifically `0, X1(Parachain(2087))`.
 
 Ensure `requireWeightAtMost` is safely larger (e.g. 2-3x) than the weight of the transact.
 
-`Developer -> Runtime Calls -> TransactionPaymentCallApi -> queryCallInfo -> weight`
+`Developer -> [Runtime Calls](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Frpc.ibp.network%2Fkusama#/runtime) -> TransactionPaymentCallApi -> queryCallInfo -> weight`
 but strictly (and if possible safely) less than `requireWeightAtMost`.
 
 `requireWeightAtMost` should be equivalent or less than in `BuyExecution` (you can compare it to the `queryCallInfo.partialFee` of the call and make `BuyExecution` 10x+ larger than this). In case of failure to do so, XCM will fail with `TooExpensive`
 
 Do not set `requireWeightAtMost` too big as you will get `dmpQueue.OverweightEnqueued`. `requireWeightAtMost` has some similar semantics to `requireWeightMinimum`. It is not clear if the message will be retried automatically. For a sanity check navigate to `configuration -> activeConfig -> umpMaxIndividualWeight` and see if it is way higher than the weight of our transact.
+
+`NOTE: above details apply to other requests too`.
 
 For additional safety consider scheduling the transact messages instead of executing immediately.
 
@@ -107,7 +110,7 @@ as message from our chain
 
 [Send XCM to accept from Picasso to Kusama for chain 2001](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpicasso-rpc.composable.finance#/extrinsics/decode/0x2900010100020c000400000000070010a5d4e81300000000070010a5d4e80006010700e8764817183c01d0070000)
 
-it must be send from [sudo](ttps://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpicasso-rpc.composable.finance#/extrinsics/decode/0x020029000101000210000400000000070010a5d4e81300000000070010a5d4e80006010700e8764817183c01d10700000d0100040001009d20)
+it must be send from [sudo](https://polkadot.js.org/apps/?rpc=wss%3A%2F%2Fpicasso-rpc.composable.finance#/extrinsics/decode/0x020029000101000214000400000000070010a5d4e81300000000070010a5d4e80006000300943577183c01d1070000140d0100040001009d20)
 
 
 **Details**
