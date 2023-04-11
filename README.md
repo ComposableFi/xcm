@@ -42,7 +42,8 @@ Resources which allows to grasp XCM(P)('Cross Chain Message (Passing)').
 - <https://blog.quarkslab.com/resources/2022-02-27-xcmv2-audit/21-12-908-REP.pdf>
 - [Polkadot Implementers Guide Messaging Overview](https://github.com/paritytech/polkadot/blob/master/roadmap/implementers-guide/src/messaging.md)
 - [Polkadot’s Messaging Scheme(article)](https://medium.com/web3foundation/polkadots-messaging-scheme-b1ec560908b7)
-
+- [Polkadot: XCM v3 | Polkadot Deep Dives](https://www.youtube.com/watch?v=MMIPNR3SuB4) #video #2023
+ 
 ## Configuration
 
 - [XCM Config & Pallet-XCM | Polkadot Deep Dives](https://www.youtube.com/watch?v=bFMvWmU1pYI) #video #runtime #configuration #design
