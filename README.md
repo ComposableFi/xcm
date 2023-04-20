@@ -1,1 +1,1 @@
-Archieved
+Archived
